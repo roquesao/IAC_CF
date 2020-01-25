@@ -11,9 +11,6 @@ Resources:
       BucketName:
         Fn::Join: ['-',[Ref: 'AWS::StackName',Ref: 'AWS::AccountId']]
       AccessControl: PublicRead
-      WebsiteConfiguration:
-        IndexDocument: index.html
-        ErrorDocument: error.html
   BucketPolicy:
     Type: AWS::S3::BucketPolicy
     Properties:
